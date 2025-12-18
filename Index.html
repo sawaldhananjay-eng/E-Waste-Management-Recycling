@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Waste Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
+       <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+    ♻️ E-Waste Care
+</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+        <a class="nav-link active" href="index.html">Home</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="account.html">Account</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="btn btn-light ms-lg-2" href="request.html">
+            Request Pickup
+        </a>
+    </li>
+</ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-- ================= CAROUSEL ================= -->
+<div id="ewasteCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#ewasteCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#ewasteCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#ewasteCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="https://namoewaste.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-05-at-2.45.31-PM.jpeg" class="d-block w-100" alt="E-Waste Collection">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>E-Waste Collection</h5>
+                <p>Safe and responsible collection of electronic waste.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://3rrecycler.com/wp-content/uploads/2023/06/ey-waste-bin-full-of-e-waste.jpg.rendition.1800.1200-1200x800.jpg" class="d-block w-100" alt="E-Waste Recycling">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>E-Waste Recycling</h5>
+                <p>Eco-friendly recycling for a greener future.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://arslansrsindia.in/wp-content/uploads/2021/09/E-Waste.jpg" class="d-block w-100" alt="Save Environment">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Save Environment</h5>
+                <p>Together we can protect our planet.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#ewasteCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#ewasteCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+<!-- ================= INFO STRIP ================= -->
+<section class="cta-section text-center">
+    <a href="request.html" class="btn btn-success btn-lg cta-btn">
+        Request E-Waste Pickup
+    </a>
+</section>
+
+
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero-section d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-white">
+                <h1 class="fw-bold">Responsible E-Waste Management</h1>
+                <p class="mt-3">
+                    Dispose your electronic waste safely and contribute towards a cleaner
+                    and greener environment.
+                </p>
+                <a href="request.html" class="btn btn-success btn-lg mt-3">
+                    Request E-Waste Pickup
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= E-WASTE CATEGORIES ================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">E-Waste Categories</h2>
+
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100 shadow category-card"
+                     data-bs-toggle="modal"
+                     data-bs-target="#pickupModal">
+                    <img src="images/mobile.jpg" class="card-img-top" alt="Mobile E-Waste">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mobile & Accessories</h5>
+                        <p class="card-text">
+                            Old mobile phones, chargers, earphones and batteries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100 shadow category-card"
+                     data-bs-toggle="modal"
+                     data-bs-target="#pickupModal">
+                    <img src="images/laptop.jpg" class="card-img-top" alt="Laptop E-Waste">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Laptops & Computers</h5>
+                        <p class="card-text">
+                            Desktops, laptops, keyboards, mouse and CPUs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100 shadow category-card"
+                     data-bs-toggle="modal"
+                     data-bs-target="#pickupModal">
+                    <img src="images/appliance.jpg" class="card-img-top" alt="Appliances">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Home Appliances</h5>
+                        <p class="card-text">
+                            Refrigerators, washing machines, microwaves, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100 shadow category-card"
+                     data-bs-toggle="modal"
+                     data-bs-target="#pickupModal">
+                    <img src="images/battery.jpg" class="card-img-top" alt="Batteries">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Batteries & Chargers</h5>
+                        <p class="card-text">
+                            Power banks, batteries, adapters and chargers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100 shadow category-card"
+                     data-bs-toggle="modal"
+                     data-bs-target="#pickupModal">
+                    <img src="images/tv.jpg" class="card-img-top" alt="TV E-Waste">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">TVs & Monitors</h5>
+                        <p class="card-text">
+                            CRT, LED, LCD TVs and computer monitors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100 shadow category-card"
+                     data-bs-toggle="modal"
+                     data-bs-target="#pickupModal">
+                    <img src="images/other.jpg" class="card-img-top" alt="Other E-Waste">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Other Electronics</h5>
+                        <p class="card-text">
+                            Printers, routers, cables and electronic toys.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= PICKUP REQUEST MODAL ================= -->
+<div class="modal fade" id="pickupModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">E-Waste Pickup Request</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <form>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" pattern="[0-9]{10}" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">E-Waste Category</label>
+                            <select class="form-select" required>
+                                <option value="">Select Category</option>
+                                <option>Mobile & Accessories</option>
+                                <option>Laptops & Computers</option>
+                                <option>Home Appliances</option>
+                                <option>Batteries & Chargers</option>
+                                <option>TVs & Monitors</option>
+                                <option>Other Electronics</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Pickup Address</label>
+                        <textarea class="form-control" rows="3" required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Quantity</label>
+                        <input type="number" class="form-control" min="1" required>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success">
+                            Submit Request
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ================= SERVICES SECTION ================= -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">Our Services</h2>
+
+        <div class="row g-4">
+
+            <!-- Service 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow service-card">
+                    <img src="images/collection.jpg" class="card-img-top" alt="E-Waste Collection">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">E-Waste Collection</h5>
+                        <p class="card-text">
+                            Doorstep pickup service for safe electronic waste disposal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow service-card">
+                    <img src="images/recycle.jpg" class="card-img-top" alt="Recycling">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Recycling</h5>
+                        <p class="card-text">
+                            Eco-friendly recycling process to reduce environmental pollution.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow service-card">
+                    <img src="images/awareness.jpg" class="card-img-top" alt="Awareness">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Awareness Programs</h5>
+                        <p class="card-text">
+                            Educating people about responsible e-waste management.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="simple-footer text-white pt-5">
+
+  <div class="container footer-container">
+        <div class="row justify-content-between">
+
+    <!-- BRAND / ABOUT -->
+    <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">E-Waste Care</h5>
+        <p class="small mt-2">
+            Responsible e-waste collection and 
+              recycling for a cleaner
+            and greener environment.
+        </p>
+    </div>
+
+    <!-- QUICK LINKS (shifted right) -->
+    <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled footer-links mt-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="request.html">Request Pickup</a></li>
+        </ul>
+    </div>
+
+    <!-- CONNECT US -->
+    <div class="col-md-3 mb-4 text-md-end text-center">
+        <h5 class="fw-bold">Connect Us</h5>
+        <div class="social-icons mt-2">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+    </div>
+
+</div>
+
+
+        <hr class="border-light opacity-25">
+
+        <div class="text-center pb-3 small">
+            © 2025 E-Waste Care | All Rights Reserved
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+<!-- Bootstrap JS  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

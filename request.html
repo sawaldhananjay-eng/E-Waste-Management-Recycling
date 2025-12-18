@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pickup Request | E-Waste Care</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">♻️ E-Waste Care</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Awareness</a></li>
+                <li class="nav-item"><a class="nav-link" href="account.html">Account</a></li>
+                <li class="nav-item">
+                    <a class="btn btn-light ms-lg-2 active" href="request.html">Request Pickup</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= PICKUP REQUEST FORM ================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <div class="card shadow">
+                    <div class="card-header bg-success text-white">
+                        <h4 class="mb-0 text-center">E-Waste Pickup Request</h4>
+                    </div>
+
+                    <div class="card-body">
+                        <form>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" pattern="[0-9]{10}" required>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">E-Waste Category</label>
+                                    <select class="form-select" required>
+                                        <option value="">Select Category</option>
+                                        <option>Mobile & Accessories</option>
+                                        <option>Laptops & Computers</option>
+                                        <option>Home Appliances</option>
+                                        <option>Batteries & Chargers</option>
+                                        <option>TVs & Monitors</option>
+                                        <option>Other Electronics</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Pickup Address</label>
+                                <textarea class="form-control" rows="3" required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Quantity</label>
+                                <input type="number" class="form-control" min="1" required>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success px-5">
+                                    Submit Request
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="simple-footer text-white text-center py-3">
+    © 2025 E-Waste Care | All Rights Reserved
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

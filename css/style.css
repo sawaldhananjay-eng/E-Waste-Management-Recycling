@@ -1,0 +1,290 @@
+/* =====================================================
+NAVBAR STYLES
+===================================================== */
+    body {
+    padding-top: 56px;                        /* Adjust based on navbar height */
+}
+
+
+
+/* =====================================================
+   CAROUSEL IMAGES
+===================================================== */
+
+
+/* Carousel height */
+.carousel-item {
+    height: 70vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dark overlay for readability */
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+/* Caption positioning */
+.carousel-caption {
+    z-index: 2;
+    bottom: 35%;
+}
+
+/* Caption heading */
+.carousel-caption h5 {
+    font-size: 52px;      
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Caption paragraph */
+.carousel-caption p {
+    font-size: 25px;
+    color: #f1f1f1;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 25%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 28px;
+    }
+
+    .carousel-caption p {
+        font-size: 15px;
+    }
+}
+
+/* =====================================================
+   CALL TO ACTION bUTTON 
+===================================================== */
+
+.cta-section {
+    background-color: #f8f9fa;   
+    padding: 15px 0;
+}
+
+.cta-btn {
+    padding: 18px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* =====================================================
+   HOME HERO SECTION
+===================================================== */
+
+.hero-section {
+    min-height: 70vh;                                    
+    background: linear-gradient(
+                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.45)
+                ),
+                url("../images/hero-bg.jpg") center/cover no-repeat;
+}
+
+
+
+.hero-section h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 18px;
+    max-width: 500px;
+}
+
+/* Mobile Hero */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+}
+
+/* =====================================================
+   CATEGORY CARDS 
+===================================================== */
+
+.category-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+
+.category-card .card-title {
+    font-weight: 600;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile cards */
+@media (max-width: 576px) {
+    .category-card img {
+        height: 180px;
+    }
+}
+
+/* =====================================================
+   SERVICES CARDS
+===================================================== */
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* =====================================================
+   AWARENESS / SERVICES PAGE HERO
+===================================================== */
+
+.whatwedo-hero {
+    height: 55vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.35)
+    ),
+    url("../images/awareness.jpg") center/cover no-repeat;
+}
+
+/* =====================================================
+   RIGHT SIDEBAR : FOCUS AREAS
+===================================================== */
+
+.focus-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.simple-list .list-group-item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* =====================================================
+   OPTIONAL FULL PAGE BG FOR AWARENESS PAGE
+===================================================== */
+
+.awareness-bg {
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/awareness.jpg") center/cover no-repeat;
+}
+
+.awareness-bg,
+.awareness-bg h1,
+.awareness-bg h2,
+.awareness-bg h3,
+.awareness-bg h4,
+.awareness-bg h5,
+.awareness-bg p,
+.awareness-bg li {
+    color: #ffffff;
+}
+
+/* =====================================================
+   FOOTER SECTION
+===================================================== */
+
+
+.simple-footer {
+    background-color: #198754;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/* Footer container to remove empty space */
+.footer-container {
+    max-width: 1000px;
+}
+
+/* Footer headings */
+.simple-footer h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Footer text */
+.simple-footer p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Quick links */
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* Connect Us heading */
+.simple-footer h5 {
+    font-size: 35px;        
+    font-weight: 700;
+}
+
+/* Connect Us icons size */
+.social-icons a {
+    font-size: 38px;       
+    margin-left: 14px;
+    
+}
+
